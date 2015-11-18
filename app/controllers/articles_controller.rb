@@ -1,4 +1,9 @@
 class ArticlesController < ApplicationController
+  def show
+    # all instance variables are passed to the view
+    @article = Article.find(params[:id])
+  end
+
   def new
   end
 
